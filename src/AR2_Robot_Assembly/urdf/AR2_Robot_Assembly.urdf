@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="AR2_Robot_Assembly">
+  <link
+    name="Base">
+    <inertial>
+      <origin
+        xyz="-0.00121164895533463 2.07098250545094E-07 0.0328380871448753"
+        rpy="0 0 0" />
+      <mass
+        value="1.83399446560583" />
+      <inertia
+        ixx="0.00350534103411268"
+        ixy="-1.31663156810717E-08"
+        ixz="-6.3405344464182E-06"
+        iyy="0.00791941936280033"
+        iyz="1.28083660702137E-08"
+        izz="0.0111560797891637" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR2_Robot_Assembly/meshes/Base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR2_Robot_Assembly/meshes/Base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="L1">
+    <inertial>
+      <origin
+        xyz="0.12487525667855 -0.0408021625555085 0.0167937490485617"
+        rpy="0 0 0" />
+      <mass
+        value="1.52295278414476" />
+      <inertia
+        ixx="0.00106147834025078"
+        ixy="7.49858454528818E-05"
+        ixz="4.24902516948922E-06"
+        iyy="0.000971051571509745"
+        iyz="-1.92437757770649E-05"
+        izz="0.00145415800060971" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR2_Robot_Assembly/meshes/L1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR2_Robot_Assembly/meshes/L1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J1"
+    type="continuous">
+    <origin
+      xyz="-0.05 0 0"
+      rpy="1.59755657853939 -1.5707963267949 0" />
+    <parent
+      link="Base" />
+    <child
+      link="L1" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="L2">
+    <inertial>
+      <origin
+        xyz="-0.00211704587004305 0.0398735511195314 0.124599025945675"
+        rpy="0 0 0" />
+      <mass
+        value="1.1166195134316" />
+      <inertia
+        ixx="0.00728563003630464"
+        ixy="-4.43939252747027E-06"
+        ixz="-1.43551743455091E-05"
+        iyy="0.00763761954402657"
+        iyz="2.68568009440616E-06"
+        izz="0.000518214918102316" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR2_Robot_Assembly/meshes/L2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR2_Robot_Assembly/meshes/L2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J2"
+    type="continuous">
+    <origin
+      xyz="0.17 -0.0650000000000003 0"
+      rpy="-1.5707963267949 0 -1.75809063330228" />
+    <parent
+      link="L1" />
+    <child
+      link="L2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="L3">
+    <inertial>
+      <origin
+        xyz="-0.000244537314644855 0.012731589759984 0.0154262557358643"
+        rpy="0 0 0" />
+      <mass
+        value="0.395085878797633" />
+      <inertia
+        ixx="0.000138211386235337"
+        ixy="-1.66278840859845E-08"
+        ixz="9.02175009302586E-06"
+        iyy="0.000162049147380867"
+        iyz="-6.41672656962559E-08"
+        izz="0.000141687034356625" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR2_Robot_Assembly/meshes/L3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR2_Robot_Assembly/meshes/L3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J3"
+    type="continuous">
+    <origin
+      xyz="0 0 0.305"
+      rpy="3.14159265358979 0.0672538576352078 3.14159265358979" />
+    <parent
+      link="L2" />
+    <child
+      link="L3" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="L4">
+    <inertial>
+      <origin
+        xyz="-0.000473999208889631 -0.00114833241906349 0.0819424028270787"
+        rpy="0 0 0" />
+      <mass
+        value="0.746226543160533" />
+      <inertia
+        ixx="0.00111110796079451"
+        ixy="6.1002801491323E-06"
+        ixz="-1.93666240979563E-05"
+        iyy="0.00118629067570245"
+        iyz="6.2712787736513E-06"
+        izz="0.000233454321215929" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR2_Robot_Assembly/meshes/L4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR2_Robot_Assembly/meshes/L4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J4"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.57079632679478 -1.54578109838187 -1.57079632679478" />
+    <parent
+      link="L3" />
+    <child
+      link="L4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="L5">
+    <inertial>
+      <origin
+        xyz="-0.0021007481896046 -0.00486751874924897 0.00723597428128814"
+        rpy="0 0 0" />
+      <mass
+        value="0.158906404548327" />
+      <inertia
+        ixx="4.07896768924961E-05"
+        ixy="-2.53946870292352E-08"
+        ixz="-1.9750241833246E-07"
+        iyy="3.41282492412699E-05"
+        iyz="9.13773281678336E-09"
+        izz="4.14868138146694E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR2_Robot_Assembly/meshes/L5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR2_Robot_Assembly/meshes/L5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J5"
+    type="continuous">
+    <origin
+      xyz="0 0 0.225000000000021"
+      rpy="3.14159265358979 0.121091356356039 0" />
+    <parent
+      link="L4" />
+    <child
+      link="L5" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="L6">
+    <inertial>
+      <origin
+        xyz="0.000275865540538166 -0.579263055138452 -0.159975439683243"
+        rpy="0 0 0" />
+      <mass
+        value="0.0211407817617659" />
+      <inertia
+        ixx="1.57969109677341E-06"
+        ixy="-1.50371856092832E-13"
+        ixz="-8.74200795058275E-10"
+        iyy="2.85086770514729E-06"
+        iyz="-6.03343862878627E-14"
+        izz="4.01268710409119E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR2_Robot_Assembly/meshes/L6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR2_Robot_Assembly/meshes/L6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J6"
+    type="continuous">
+    <origin
+      xyz="0.524092236977914 -0.0135149910761031 0.27802151031714"
+      rpy="0.269471943536877 0.00634981555518375 -1.59378289765441" />
+    <parent
+      link="L5" />
+    <child
+      link="L6" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="EF">
+    <inertial>
+      <origin
+        xyz="0.00980000083687808 0.00276878348986728 -0.0135000004664999"
+        rpy="0 0 0" />
+      <mass
+        value="0.0131134330814085" />
+      <inertia
+        ixx="1.49139305999371E-06"
+        ixy="-4.0606616892051E-14"
+        ixz="6.33926227541485E-12"
+        iyy="1.09755190396397E-06"
+        iyz="8.96582540657781E-14"
+        izz="8.74083654440223E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR2_Robot_Assembly/meshes/EF.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR2_Robot_Assembly/meshes/EF.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="EF"
+    type="fixed">
+    <origin
+      xyz="-0.00949999524239368 -0.565861119660865 -0.188320757924126"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="L6" />
+    <child
+      link="EF" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

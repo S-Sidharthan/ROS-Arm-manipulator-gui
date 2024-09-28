@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: AR2_Robot_Assembly
+    relative_path: urdf/AR2_Robot_Assembly.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/AR2_Robot_Assembly.srdf
+  CONFIG:
+    author_name: Sid
+    author_email: sidbritz24@gmail.com
+    generated_timestamp: 1722799042
