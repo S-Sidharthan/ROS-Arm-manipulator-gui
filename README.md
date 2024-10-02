@@ -40,7 +40,7 @@ Usage
 Launch MoveIt for AR2 Arm
 To launch the MoveIt configuration for the AR2 robotic arm and start controlling the arm using the GUI:
 
-
+sudo apt-get install ros-noetic-moveit
 roslaunch AR2_Robot_Assembly gazebo.launch 
 roslaunch arm_pdg demo.launch 
 
