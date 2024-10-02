@@ -41,7 +41,10 @@ Launch MoveIt for AR2 Arm
 To launch the MoveIt configuration for the AR2 robotic arm and start controlling the arm using the GUI:
 
 
-roslaunch yourpackage moveit_arm.launch
+roslaunch AR2_Robot_Assembly gazebo.launch 
+roslaunch arm_pdg demo.launch 
+
+
 Control via GUI
 Use the custom ROS GUI to control the robotic manipulator’s movements. The GUI supports:
 
